@@ -1,0 +1,102 @@
+<html>
+
+    <head>
+        <title>"Formulário"</title>
+    </head>
+
+    <body >
+
+		<div id = "header" style="background-color: black; color: white; margin: 10px; padding: 10px;">
+            <h1><span style="color: white;"> - Preencher Formulário - </h1>
+        </div>
+
+		
+		<div  style="margin: 10px; padding: 10px;">
+			<p> 
+				Lista: 
+				<br>1 - Preencha com informações baseadas em você!</br>
+				2 - Escolha pelo menos uma opção de fruta e hobby! 
+				<br>3 - Escreva sobre você!</br> 
+			</p>
+		</div>
+		
+		
+        <form>
+			<div style="margin: 10px; padding: 10px;">
+
+				<div>
+					<p>
+					Nome: <input type="text" name="nome" placeholder="Digite Seu Nome"> </p>
+					<p>
+					Data de Nascimento: <input type="data" name="data" placeholder="Digite Sua Data de Nascimento">
+					</p>
+					
+					<p> Sexo: 
+						<input type="radio" name="sexo"> Masculino 
+						<input type="radio" name="sexo"> Feminino 
+					</p> 
+					
+					<p> Frutas que você gosta: 
+						<input type="checkbox" name="frutas"> Mamão 
+						<input type="checkbox" name="fruta"> Melão 
+						<input type="checkbox" name="frutas"> Laranja
+						<input type="checkbox" name="frutas"> Goiaba
+						<input type="checkbox" name="frutas"> Abacate
+						<input type="checkbox" name="frutas"> Morango
+						<input type="checkbox" name="frutas"> Uva
+						<input type="checkbox" name="frutas"> Nenhuma das opções!
+					</p> 
+					
+					<p> Gosta de falar sobre você ?
+						<select name="select">
+							<option value="seleção"> Sim </option>
+							<option value="seleção"> Não </option>
+						</select>
+					</p>
+				</div>
+				
+				<div>
+					<p>
+						Fale sobre você...
+						
+						<br>
+							<textarea id="texto" name="texto"
+								rows="10" cols="30">
+							</textarea>
+						</br>
+					</p>
+				
+					<p>
+						Quais são seus Hobbies ?
+						<br>
+							<select multiple = "multiple">
+								<option value="seleção"> Dançar </option>
+								<option value="seleção"> Correr </option>
+								<option value="seleção"> Nadar </option>
+								<option value="seleção"> Voar </option>
+								<option value="seleção"> Jogar bola </option>
+								<option value="seleção"> Viajar </option>
+								<option value="seleção"> Ler </option>
+							</select>
+						</br>
+					</p> 
+				</div>	
+					
+				<div>
+					Login:
+					<input type="text" id="login" name="login">
+				</div>
+				<div>
+					Senha:
+					<input type="password" id="pass" name="password">
+				</div>
+				
+				<p> <input type="submit" name="enviar" value="Enviar">			<input type="reset" name="limpar" value="Limpar"></p>  
+				
+			</div>
+        </form>
+
+    </body>
+</html>
+
+
